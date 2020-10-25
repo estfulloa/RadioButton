@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <EditText
+        android:id="@+id/number2"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="50dp"
+        android:ems="10"
+        android:hint="Ingresa un numero"
+        android:inputType="number"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.452"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/edNum"
+        app:layout_constraintVertical_bias="0.053" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/title2_Windows"
+        android:textSize="30sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/number2">
+
+        <RadioButton
+            android:id="@+id/rdSuma"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Suma"
+            tools:text="Suma" />
+
+        <RadioButton
+            android:id="@+id/rdResta"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Resta"
+            tools:text="Resta" />
+
+        <RadioButton
+            android:id="@+id/rdMulti"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Multiplicacion"
+            tools:text="Multiplicacion" />
+
+        <RadioButton
+            android:id="@+id/rdDiv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Division"
+            tools:text="Division" />
+
+        <RadioButton
+            android:id="@+id/rdPot"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Potencia"
+            tools:text="Potencia" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnOperacion"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:text="@string/button_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/radioGroup" />
+
+    <TextView
+        android:id="@+id/txtResultado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="0"
+        android:textSize="24sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnOperacion"
+        tools:text="0" />
+
+    <EditText
+        android:id="@+id/edNum"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginEnd="50dp"
+        android:ems="10"
+        android:hint="Ingresa un numero"
+        android:inputType="number"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:text="Aurora Estefania Ulloa"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtResultado" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
